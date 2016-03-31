@@ -1,0 +1,1 @@
+Unless a license is stated at the head of each file in this repository, all sources are released under the GNU General Public License version 2 (http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html).
