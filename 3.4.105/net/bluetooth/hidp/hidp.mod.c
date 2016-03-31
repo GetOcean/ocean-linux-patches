@@ -1,0 +1,135 @@
+#include <linux/module.h>
+#include <linux/vermagic.h>
+#include <linux/compiler.h>
+
+MODULE_INFO(vermagic, VERMAGIC_STRING);
+
+struct module __this_module
+__attribute__((section(".gnu.linkonce.this_module"))) = {
+ .name = KBUILD_MODNAME,
+ .init = init_module,
+#ifdef CONFIG_MODULE_UNLOAD
+ .exit = cleanup_module,
+#endif
+ .arch = MODULE_ARCH_INIT,
+};
+
+MODULE_INFO(intree, "Y");
+
+static const struct modversion_info ____versions[]
+__used
+__attribute__((section("__versions"))) = {
+	{ 0x2bdabb65, "module_layout" },
+	{ 0xc0a72534, "hci_conn_put_device" },
+	{ 0xfb5407f8, "skb_queue_head" },
+	{ 0x272aebe4, "hid_add_device" },
+	{ 0xdc342477, "kmalloc_caches" },
+	{ 0x12da5bb2, "__kmalloc" },
+	{ 0xc226e212, "sock_init_data" },
+	{ 0xfbc74f64, "__copy_from_user" },
+	{ 0xdbb20bf6, "up_read" },
+	{ 0x22598b6e, "kernel_sendmsg" },
+	{ 0x8e541335, "sockfd_lookup" },
+	{ 0xdde15283, "hci_conn_hold_device" },
+	{ 0x67c2fa54, "__copy_to_user" },
+	{ 0xc996d097, "del_timer" },
+	{ 0x3438bf4a, "dev_set_drvdata" },
+	{ 0xa55270db, "sock_no_setsockopt" },
+	{ 0xc8b57c27, "autoremove_wake_function" },
+	{ 0x7ee25f18, "hid_parse_report" },
+	{ 0x7ade6833, "sock_no_getsockopt" },
+	{ 0x718565d5, "remove_wait_queue" },
+	{ 0x2a3aa678, "_test_and_clear_bit" },
+	{ 0xa3bcfc56, "sock_no_getname" },
+	{ 0xf087137d, "__dynamic_pr_debug" },
+	{ 0xfb0e29f, "init_timer_key" },
+	{ 0x3b4abce5, "mutex_unlock" },
+	{ 0xda9863dd, "bt_sock_register" },
+	{ 0xc06c3839, "kthread_create_on_node" },
+	{ 0xbea984a4, "sock_no_poll" },
+	{ 0x7d11c268, "jiffies" },
+	{ 0x343a1a8, "__list_add" },
+	{ 0x99c032cb, "hid_input_report" },
+	{ 0xdbacc67c, "down_read" },
+	{ 0xb61a0c3b, "bt_err" },
+	{ 0x7c640527, "bt_info" },
+	{ 0x4a8506a7, "__pskb_pull_tail" },
+	{ 0xe1f4f91f, "input_event" },
+	{ 0x4467122a, "__init_waitqueue_head" },
+	{ 0x3f796df4, "sock_no_mmap" },
+	{ 0xffd5a395, "default_wake_function" },
+	{ 0xb133d17b, "sock_no_recvmsg" },
+	{ 0xfa2a45e, "__memzero" },
+	{ 0xe75a2fa8, "skb_queue_purge" },
+	{ 0xb58cadc7, "hci_get_route" },
+	{ 0x62080a6f, "sock_no_socketpair" },
+	{ 0xe395d510, "sk_alloc" },
+	{ 0x62b87ac2, "mutex_lock_interruptible" },
+	{ 0xcccbfe96, "__mutex_init" },
+	{ 0x99a3f5c4, "sock_no_bind" },
+	{ 0x71c90087, "memcmp" },
+	{ 0x328a05f1, "strncpy" },
+	{ 0x7442c983, "sock_no_listen" },
+	{ 0x8af11587, "mutex_lock" },
+	{ 0xd0c3d3a0, "sock_no_accept" },
+	{ 0x521445b, "list_del" },
+	{ 0xb08cbe06, "sk_free" },
+	{ 0x8834396c, "mod_timer" },
+	{ 0x2469810f, "__rcu_read_unlock" },
+	{ 0xf19294db, "bt_sock_unregister" },
+	{ 0xba6d271e, "skb_pull" },
+	{ 0x79d03257, "up_write" },
+	{ 0x74bd46a4, "down_write" },
+	{ 0x3b6c8e53, "fput" },
+	{ 0x31015095, "sock_no_shutdown" },
+	{ 0xcf611f7e, "skb_queue_tail" },
+	{ 0xc6cbbc89, "capable" },
+	{ 0xf678e572, "proto_register" },
+	{ 0x87df7aee, "kmem_cache_alloc" },
+	{ 0xc2066af0, "batostr" },
+	{ 0x28c11791, "__alloc_skb" },
+	{ 0xecccf912, "put_device" },
+	{ 0x3bd1b1f6, "msecs_to_jiffies" },
+	{ 0xa97a89f9, "input_register_device" },
+	{ 0xd62c833f, "schedule_timeout" },
+	{ 0x1000e51, "schedule" },
+	{ 0xd6abce9, "kfree_skb" },
+	{ 0x397e8501, "proto_unregister" },
+	{ 0xe001cb10, "__module_put_and_exit" },
+	{ 0x716c7058, "wake_up_process" },
+	{ 0x395f38f9, "hid_destroy_device" },
+	{ 0x96dd38e, "hid_allocate_device" },
+	{ 0x79f722a4, "__module_get" },
+	{ 0x72542c85, "__wake_up" },
+	{ 0xb324a54e, "sock_no_connect" },
+	{ 0xb8ea6565, "_raw_write_unlock_bh" },
+	{ 0x3fdacc6f, "add_wait_queue" },
+	{ 0x37a0cba, "kfree" },
+	{ 0x9d669763, "memcpy" },
+	{ 0xd7b7ac69, "input_unregister_device" },
+	{ 0x32f80ea9, "prepare_to_wait" },
+	{ 0x510e04b4, "sock_no_sendmsg" },
+	{ 0x304ad890, "set_user_nice" },
+	{ 0x46e1c339, "__hid_register_driver" },
+	{ 0x6d09b57e, "_raw_write_lock_bh" },
+	{ 0xf83178bd, "finish_wait" },
+	{ 0xdf3ccd2c, "skb_dequeue" },
+	{ 0xefd6cf06, "__aeabi_unwind_cpp_pr0" },
+	{ 0x676bbc0f, "_set_bit" },
+	{ 0x8d522714, "__rcu_read_lock" },
+	{ 0x49ebacbd, "_clear_bit" },
+	{ 0xa0843b06, "hid_unregister_driver" },
+	{ 0xe92c8bc2, "skb_put" },
+	{ 0x8e1130b2, "dev_get_drvdata" },
+	{ 0x4dec6038, "memscan" },
+	{ 0x8ba4ef0e, "hid_output_report" },
+	{ 0x5be115a7, "input_allocate_device" },
+};
+
+static const char __module_depends[]
+__used
+__attribute__((section(".modinfo"))) =
+"depends=bluetooth";
+
+
+MODULE_INFO(srcversion, "C03175A9EAD0D3D526965B5");
